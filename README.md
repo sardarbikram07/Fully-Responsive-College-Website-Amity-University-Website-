@@ -31,7 +31,7 @@ A modern, responsive website for Amity University built with React and Vite, sho
 
 1. Clone the repository
 ```bash
-git clone [your-repository-link]
+git clone https://github.com/sardarbikram07/Fully-Responsive-College-Website-Amity-University-Website-
 ```
 
 2. Navigate to the project directory
@@ -60,20 +60,10 @@ After starting the development server, the website will be available at `http://
 - Testimonials
 - Contact
 
-## 📸 Screenshots
-
-### Homepage
-[Add homepage screenshot here]
-
-### Programs
-[Add programs page screenshot here]
-
-### Campus Life
-[Add campus life screenshot here]
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](Add your issues page link).
+Contributions, issues, and feature requests are welcome! 
 
 ## 📝 License
 
@@ -81,9 +71,11 @@ This project is [MIT](./LICENSE) licensed.
 
 ## 👥 Contact
 
-Your Name - [Your Email]
+Bikram Sardar - sardarbikram420@gmail.com
 
-Project Link: [Add your repository link]
+Abhirup Karmakar - abhirup.karmakar00@gmail.com
+
+Project Link: https://github.com/sardarbikram07/Fully-Responsive-College-Website-Amity-University-Website-
 
 ---
 Made with ❤️ for Amity University
