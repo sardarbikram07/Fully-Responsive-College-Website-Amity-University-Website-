@@ -1,0 +1,102 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(106, 100, 145, 0.7),rgba(8,0,58,0.7)), url('../../assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Ensures content stacks properly */
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 800px;
+    transition: transform 0.8s ease-out;
+}
+
+.hero-text:hover {
+    transform: translateY(-20px);
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #08003a;
+    margin: auto; /* Centers the button */
+    font-size: 14px; /* Slightly smaller font size */
+    background-color: #FECD00;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.6);
+}
+
+.btn img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover img {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+
+@media(max-width: 850px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 650px) {
+    .hero-text h1 {
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .hero-text p {
+        font-size: 14px;
+        margin: 15px auto 30px;
+    }
+}
+@media(max-width: 850px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the items */
+        justify-content: center;
+    }
+
+    .btn {
+        width: auto; /* Ensure it takes only necessary space */
+        padding: 8px 16px; /* Adjust padding for better fit */
+        font-size: 12px;
+        border-radius: 20px;
+        margin-top: 10px; /* Adds space between menu items and button */
+    }
+}

@@ -1,0 +1,187 @@
+.testimonials{
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+.next-btn, .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translate(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212EA0;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.back-btn{
+    right: auto;
+    left: 0;
+}
+.next-btn{
+    right: 0;
+    left: auto;
+}
+.slider{
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+.slider ul li{
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+.slide{
+    background: #fff;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 8px;
+    color: #555;
+    line-height: 1.6;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 32, 96, 0.1);
+    position: relative;
+    animation: slideInRight 0.8s ease-out forwards;
+    height: 100%;
+}
+.slide:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.slide img{
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212EA0;
+}
+.slide p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.8;
+    color: #555;
+    font-style: italic;
+    padding-left: 1.25rem;
+    border-left: 3px solid #002060;
+    margin-top: 1rem;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.user-info h3{
+    color: #0b0f42;
+}
+.user-info span {
+    color: #B71918;
+    font-size: clamp(0.875rem, 2vw, 0.875rem);
+    font-weight: 500;
+}
+
+/* Hover effect on user info */
+.user-info img {
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.user-info img:hover {
+    transform: scale(1.2); /* Enlarges the profile picture slightly */
+    border: 4px solid #FFD700; /* Changes border color to gold */
+}
+
+.next-btn:hover, .back-btn:hover {
+    background: #FFD700; /* Changes color to gold on hover */
+    transform: scale(1.1) translateX(0px); /* Enlarges buttons slightly */
+}
+/* Move the back button to the left on hover */
+.back-btn:hover {
+    background: #FFD700; /* Changes color to gold on hover */
+    transform: scale(1.1) translateX(-28px); /* Moves left */
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.active {
+  color: #FFD700; /* Gold color that matches your hover effect */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+.star.inactive {
+  color: #d1d1d1;
+}
+
+.rating-text {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .star {
+    font-size: 20px;
+  }
+  
+  .rating-text {
+    font-size: 12px;
+  }
+}
+
+
+
+/*-------------------------------- media query --------------------------------*/
+
+@media(max-width: 800px){
+    .testimonials{
+        padding: 0 40px;
+    }
+    .next-btn, .back-btn{
+        padding: 10px;
+        width: 35px;
+    }
+    .testimonials ul li{
+        padding: 10px;
+    }
+    .slide{
+        padding: 10px;
+    }
+    .slide img{
+        width: 50px;
+        border: 3px solid #212EA0;
+    }
+}
+@media(max-width: 600px){
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .user-info h3{
+        font-size: 16px;
+    }
+    .slider p{
+        font-size: 12px;
+    }
+}
